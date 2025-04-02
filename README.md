@@ -92,10 +92,10 @@ The script utilizes the subprocess module to interact with the system:
 
 ```bash
 # List all running processes
-python3 process_manager.py --list
+python3 assignment2.py --list
 
 # Search for a process named "chrome"
-python3 process_manager.py --search chrome
+python3 assignment2.py --search chrome
 
 # Kill a process with PID 12345
-python3 process_manager.py --kill 12345
+python3 assignment2.py --kill 12345
