@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-""" This assignment is prepared by ALI, SAMIP and LOGAN for OPS445.
-SEC: NDD
-"""
-
 import os
+import sys
 import argparse
 
 # Function to list running processes
