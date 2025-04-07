@@ -26,12 +26,12 @@ def terminate_process(pid): # defines a function which takes the proccess ID as 
     os.system(f'kill {pid}') # after running the "kill" command, it stops the process with that PID
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process Manager Script")
+    parser = argparse.ArgumentParser(description="Process Manager Script") # Initialize argument parser with a description for -h
     parser.add_argument('-t', '--terminate', type=int, help="Terminate a process by PID") # Ali: adds a command line option with a help text
     parser.add_argument('-l', '--list', action='store_true', help='List processes') # Logan: adds a command line argument so the user can list processes
     parser.add_argument('-u', '--user', type= str, help='Filter processes by user') # Logan: adds a command line argument to use with the list argument to filter user processes
     parser.add_argument('-s', '--search', type=str, help="Search for a process by name") # Samip: adds a command line argument to search for the processes
-    args = parser.parse_args()
+    args = parser.parse_args() # Parse command line arguments and store them in args so we can call them when arguments are used.
 
     if args.list: # Logan: if user uses -l or --list then continue
         list_processes(args.user) # Logan: Calls the list process along with args.user which holds the value of the user provided, if none then args.user will not be used
