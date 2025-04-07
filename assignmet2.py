@@ -17,3 +17,20 @@ def terminate_process(pid): # defines a function which takes the proccess ID as 
     os.system(f'kill {pid}') # after running the "kill" command, it stops the process with that PID
 
 if __name__ == "__main__":
+    parser.add_argument('-t', '--terminate', type=int, help="Terminate a process by PID") # Ali: adds a command line option with a help text
+
+
+
+    if
+        
+    elif
+        
+    elif args.terminate: # Ali: if user uses -t or --terminate options
+        terminate_process(args.terminate) # Ali: call the function to terminate the process using the PID
+    else:
+        print("Please provide a valid option. Use -h for help.") # Ali: If no valid option used, print a message showing how to get help
+
+
+
+
+
