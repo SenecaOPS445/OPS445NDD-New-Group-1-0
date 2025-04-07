@@ -30,7 +30,7 @@ if __name__ == "__main__":
     parser.add_argument('-t', '--terminate', type=int, help="Terminate a process by PID") # Ali: adds a command line option with a help text
     parser.add_argument('-l', '--list', action='store_true', help='List processes') # Logan: adds a command line argument so the user can list processes
     parser.add_argument('-u', '--user', type= str, help='Filter processes by user') # Logan: adds a command line argument to use with the list argument to filter user processes
-    parser.add_argument('-s', '--search', type=str, help="Search for a process by name")
+    parser.add_argument('-s', '--search', type=str, help="Search for a process by name") # Samip: adds a command line argument to search for the processes
     args = parser.parse_args()
 
     if args.list: # Logan: if user uses -l or --list then continue
