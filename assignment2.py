@@ -34,7 +34,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.list: # Logan: if user uses -l or --list then continue
-    list_processes(args.user) # Logan: Calls the list process along with args.user which holds the value of the user provided, if none then args.user will not be used
+        list_processes(args.user) # Logan: Calls the list process along with args.user which holds the value of the user provided, if none then args.user will not be used
         
     elif args.search: #Samip: If -s or --search is passed
         search_process(args.search) #Samip: It calls the funtion to search
