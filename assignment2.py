@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+
 import argparse
 
 # Logan: Function to list running processes
@@ -25,16 +26,23 @@ def terminate_process(pid): # defines a function which takes the proccess ID as 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process Manager Script")
+    parser.add_argument('-t', '--terminate', type=int, help="Terminate a process by PID") # Ali: adds a command line option with a help text
     parser.add_argument('-l', '--list', action='store_true', help='List processes') # Logan: adds a command line argument so the user can list processes
     parser.add_argument('-u', '--user', type= str, help='Filter processes by user') # Logan: adds a command line argument to use with the list argument to filter user processes
-    parser.add_argument('-t', '--terminate', type=int, help="Terminate a process by PID") # Ali: adds a command line option with a help text
     args = parser.parse_args()
 
-if args.list: # Logan: if user uses -l or --list then continue
+    if args.list: # Logan: if user uses -l or --list then continue
     list_processes(args.user) # Logan: Calls the list process along with args.user which holds the value of the user provided, if none then args.user will not be used
-            
-elif args.terminate: # Ali: if user uses -t or --terminate options
+        
+    elif
+        
+    elif args.terminate: # Ali: if user uses -t or --terminate options
         terminate_process(args.terminate) # Ali: call the function to terminate the process using the PID
-else:
-        print("Please provide a valid option. Use -h for help.") # Ali: If no valid option used, print a message showing how to get help
+    else:
+        print("Please provide a valid option. Use -h for help.") 
 
+
+
+
+
+   
